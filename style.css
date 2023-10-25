@@ -5,9 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
     border: none;
     outline: none;
+    font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -31,7 +31,7 @@ body{
     color: var(--text-color);
 }
 
-.wrap{
+.wrapper{
     position: relative;
     width: 66rem;
     height: 45rem;
@@ -51,11 +51,11 @@ body{
     transform-origin: right;
 }
 
-.cover .cover-left{
+.cover.cover-left{
     z-index: -1;
 }
 
-.cover .cover-right .turn{
+.cover.cover-right.turn{
     transform: rotateY(180deg);
 }
 
@@ -100,7 +100,7 @@ body{
     color: var(--main-color);
 }
 
-.profile-page .socials{
+.profile-page.socials{
     margin: .6rem 0 0.8rem;
 }
 
@@ -161,4 +161,18 @@ body{
 .btn:nth-child(2):hover{
     background: var(--main-color);
     color: var(--white-color);
+}
+
+.book-page.page-right{
+    position: absolute;
+    right: 0;
+}
+
+.book-page.page-front, .book-page.page-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--pages-color);
 }
